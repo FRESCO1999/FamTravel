@@ -55,7 +55,7 @@ scene.add(globe);
 
 // Load country GeoJSON (already has names)
 async function loadCountries() {
-  const res = await fetch('https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson');
+  const res = await fetch('world.geojson');;
   const geo = await res.json();
 
   // Restore saved statuses if available
